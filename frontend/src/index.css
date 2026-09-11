@@ -21,6 +21,7 @@
      colors). Flips in dark mode so text stays readable over the lighter
      sage-green dark-mode brand tokens. */
   --color-brand-on: #ffffff;
+  --color-nav-hover: #27852e;
 
   --color-background: #f7fbf1;
   --color-foreground: #191d17;
@@ -121,6 +122,7 @@
   /* In dark mode brand-600 is light sage — pair it with a very dark green
      foreground so white-on-sage contrast failures don't ship. */
   --color-brand-on: #0a390f;
+  --color-nav-hover: #a1d39a;
   --color-evt-community-bg: #103028;
   --color-evt-community-fg: #a8e0d8;
   --color-evt-official-bg: #1a3050;

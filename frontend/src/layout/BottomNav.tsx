@@ -85,7 +85,7 @@ function NavItem({ to, label, children }: NavItemProps) {
       aria-label={label}
       className={({ isActive }) =>
         cn(
-          'text-muted hover:bg-background flex flex-col items-center justify-center gap-0.5 transition-colors',
+          'group text-muted hover:text-nav-hover focus-visible:text-nav-hover focus-visible:outline-brand-700 flex flex-col items-center justify-center gap-0.5 transition-colors focus-visible:outline-2 focus-visible:-outline-offset-3 motion-reduce:transition-none',
           isActive && 'text-brand-700',
         )
       }
@@ -185,7 +185,7 @@ function ProfilePhoto({ src, active }: { src: string; active: boolean }) {
       alt=""
       aria-hidden="true"
       className={cn(
-        'ring-border h-6 w-6 rounded-full object-cover ring-1',
+        'ring-border h-6 w-6 rounded-full object-cover ring-1 group-hover:ring-current group-focus-visible:ring-current',
         active && 'ring-brand-700 ring-2',
       )}
     />
